@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Age Calculator</title>
+    <!-- CSS link -->
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <main class="wrapper">
+        <section class="card">
+            <h1>Age Calculator</h1>
+
+            <div class="input-row">
+                <label for="dob">জন্মতারিখ দিন</label>
+                <input type="date" id="dob" max="" />
+            </div>
+
+            <div class="btn-row">
+                <button id="calcBtn" class="btn primary">Calculate</button>
+                <button id="resetBtn" class="btn ghost">Reset</button>
+            </div>
+
+            <p id="error" class="error" aria-live="polite"></p>
+
+            <div class="results" aria-live="polite">
+                <div class="result-box">
+                    <span class="num" id="years">--</span>
+                    <span class="label">বছর</span>
+                </div>
+                <div class="result-box">
+                    <span class="num" id="months">--</span>
+                    <span class="label">মাস</span>
+                </div>
+                <div class="result-box">
+                    <span class="num" id="days">--</span>
+                    <span class="label">দিন</span>
+                </div>
+            </div>
+
+            <div class="extra">
+                <p id="summary">আপনার বয়স দেখতে জন্মতারিখ দিন, তারপর Calculate চাপুন।</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <small>Mjh ❤️ Sabbir</small>
+    </footer>
+
+    <!-- JS link, body শেষের আগে -->
+    <script src="./app.js"></script>
+</body>
+
+</html>
